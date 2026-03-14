@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import { ArrowUpRight } from 'lucide-react';
 import { useTheme } from './ThemeProvider';
+import logoLight from '../assets/ge-light.png';
+import logoDark from '../assets/ge-dark.png';
 
 export default function Footer() {
   const { theme } = useTheme();
@@ -11,10 +13,9 @@ export default function Footer() {
         <div className="col-span-1 lg:col-span-2">
           <div className="flex items-center gap-4 mb-6">
             <img 
-              src={theme === 'light' ? 'https://storage.googleapis.com/aistudio-janus-prod-app-data/1118335/2026-03-14T10:37:19.467Z-image.png' : 'https://storage.googleapis.com/aistudio-janus-prod-app-data/1118335/2026-03-14T10:37:18.490Z-image.png'}
+              src={theme === 'light' ? logoLight : logoDark}
               alt="Gajera Estate Logo"
               className="h-16 w-16 md:h-20 md:w-20 object-contain transition-all duration-500"
-              referrerPolicy="no-referrer"
             />
             <h2 className="font-serif text-3xl md:text-5xl">
               Gajera <span className="text-[#d4af37] italic">Estate</span>
@@ -47,8 +48,8 @@ export default function Footer() {
         <div>
           <h3 className="font-sans text-xs tracking-[0.2em] uppercase text-[#d4af37] mb-6">Contact</h3>
           <ul className="space-y-4 font-sans text-sm text-[#1a1a1a]/70 dark:text-white/70 transition-colors duration-500">
-            <li>Mumbai, Maharashtra, India</li>
-            <li>+91 98765 43210</li>
+            <li>Ahmedabad, Gujarat, India</li>
+            <li>+91 97269 00111</li>
             <li>info@gajeraestate.com</li>
           </ul>
         </div>

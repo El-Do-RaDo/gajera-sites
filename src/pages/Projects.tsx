@@ -85,9 +85,8 @@ function ProjectCard({ project, index }: { project: any, index: number }) {
   return (
     <motion.div
       ref={cardRef}
-      style={{ y, rotateX, scale, opacity }}
+      style={{ y, rotateX, scale, opacity, perspective: 1000 }}
       className={`group cursor-pointer ${index % 2 !== 0 ? 'md:mt-48' : ''}`}
-      style={{ perspective: 1000 }}
     >
       <motion.div style={{ rotateX, scale, opacity }}>
         <div className="relative h-[60vh] rounded-2xl overflow-hidden mb-6 shadow-2xl shadow-black/50">

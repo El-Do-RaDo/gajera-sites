@@ -50,9 +50,9 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.2, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
           >
-            <h1 className="font-serif text-6xl md:text-8xl lg:text-[10rem] leading-[0.85] tracking-tighter uppercase mb-6 drop-shadow-2xl">
-              <span className="block text-outline-gold opacity-100 dark:opacity-80 drop-shadow-md">Beyond</span>
-              <span className="block drop-shadow-lg">Architecture</span>
+            <h1 className="font-serif text-6xl md:text-8xl lg:text-[10rem] leading-[0.85] tracking-tighter uppercase mb-6 drop-shadow-2xl text-[#1a1a1a] dark:text-white">
+              <span className="block drop-shadow-[0_2px_8px_rgba(0,0,0,0.15)] dark:drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]">Beyond</span>
+              <span className="block drop-shadow-[0_2px_8px_rgba(0,0,0,0.15)] dark:drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]">Architecture</span>
             </h1>
           </motion.div>
           
@@ -60,7 +60,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.2, delay: 0.6, ease: [0.16, 1, 0.3, 1] }}
-            className="font-sans text-sm md:text-base tracking-[0.3em] uppercase text-[#d4af37] max-w-2xl mx-auto drop-shadow-md"
+            className="font-sans text-sm md:text-base tracking-[0.3em] uppercase text-[#1a1a1a] dark:text-[#d4af37] max-w-2xl mx-auto drop-shadow-[0_2px_4px_rgba(0,0,0,0.1)] dark:drop-shadow-md transition-colors duration-500"
           >
             Redefining Luxury Living in India
           </motion.p>
@@ -87,7 +87,7 @@ export default function Home() {
             transition={{ duration: 1, ease: "easeOut" }}
             className="z-20"
           >
-            <h2 className="font-serif text-4xl md:text-6xl mb-8 leading-tight">
+            <h2 className="font-serif text-4xl md:text-6xl mb-8 leading-tight text-[#1a1a1a] dark:text-white">
               Crafting <span className="text-[#d4af37] italic">Masterpieces</span><br />
               in Concrete & Glass
             </h2>
@@ -110,7 +110,7 @@ export default function Home() {
             >
               <ParallaxImage
                 src="https://media.istockphoto.com/id/1295808919/photo/hong-kong-central-district-skyscrapers.jpg?s=612x612&w=0&k=20&c=wUzkai_7_LbovCgLG2HmpaoFc7TS8O3MXnxEW-d-VL4="
-                alt="Mumbai Skyline Construction"
+                alt="Ahmedabad Skyline Construction"
                 containerClassName="w-full h-full"
               />
             </motion.div>
@@ -149,7 +149,7 @@ export default function Home() {
             viewport={{ once: true }}
             transition={{ duration: 1 }}
           >
-            <h2 className="font-serif text-4xl md:text-6xl mb-8">Our <span className="text-[#d4af37] italic">Vision</span></h2>
+            <h2 className="font-serif text-4xl md:text-6xl mb-8 text-[#1a1a1a] dark:text-white">Our <span className="text-[#d4af37] italic">Vision</span></h2>
             <p className="font-sans text-[#1a1a1a]/70 dark:text-white/70 leading-relaxed max-w-3xl mx-auto mb-12 text-lg transition-colors duration-500">
               To pioneer the future of Indian real estate by integrating sustainable infrastructure, mindful living spaces, and cutting-edge construction technology. We envision cities where concrete and nature coexist in perfect harmony.
             </p>
@@ -166,7 +166,7 @@ export default function Home() {
         <div className="px-6 md:px-12 max-w-7xl mx-auto mb-16 flex justify-between items-end">
           <div>
             <h3 className="font-sans text-xs tracking-[0.2em] uppercase text-[#d4af37] mb-4">Portfolio</h3>
-            <h2 className="font-serif text-5xl md:text-7xl">Featured <span className="italic text-[#1a1a1a]/50 dark:text-white/50 transition-colors duration-500">Works</span></h2>
+            <h2 className="font-serif text-5xl md:text-7xl text-[#1a1a1a] dark:text-white">Featured <span className="italic text-[#1a1a1a]/50 dark:text-white/50 transition-colors duration-500">Works</span></h2>
           </div>
           <Link to="/projects" className="hidden md:flex items-center gap-2 font-sans text-xs tracking-[0.2em] uppercase text-[#1a1a1a]/70 dark:text-white/70 hover:text-[#d4af37] transition-colors duration-500">
             View All <ArrowRight size={16} />
@@ -175,9 +175,9 @@ export default function Home() {
 
         <div className="flex flex-col gap-32 px-6 md:px-12 max-w-7xl mx-auto perspective-[2000px]">
           {[
-            { id: '01', title: 'The Aurelia', location: 'Mumbai', img: 'https://images.pexels.com/photos/1105766/pexels-photo-1105766.jpeg?auto=compress&cs=tinysrgb&w=1920' },
-            { id: '02', title: 'Crest Commercial', location: 'Pune', img: 'https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg?auto=compress&cs=tinysrgb&w=1920' },
-            { id: '03', title: 'Oasis Wellness', location: 'Goa', img: 'https://images.pexels.com/photos/2581598/pexels-photo-2581598.jpeg?auto=compress&cs=tinysrgb&w=1920' }
+            { id: '01', title: 'The Aurelia', location: 'Shela , Ahmedabad', img: 'https://images.pexels.com/photos/1105766/pexels-photo-1105766.jpeg?auto=compress&cs=tinysrgb&w=1920' },
+            { id: '02', title: 'Crest Commercial', location: 'Shilaj, Ahmedabad', img: 'https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg?auto=compress&cs=tinysrgb&w=1920' },
+            { id: '03', title: 'Oasis Wellness', location: 'SoBo, Ahmedabad', img: 'https://images.pexels.com/photos/2581598/pexels-photo-2581598.jpeg?auto=compress&cs=tinysrgb&w=1920' }
           ].map((project, index) => (
             <motion.div
               key={project.id}
@@ -199,7 +199,7 @@ export default function Home() {
               
               <div className="w-full lg:w-1/3 flex flex-col">
                 <span className="font-serif text-6xl text-[#1a1a1a]/10 dark:text-white/10 mb-4 transition-colors duration-500">{project.id}</span>
-                <h3 className="font-serif text-4xl mb-2">{project.title}</h3>
+                <h3 className="font-serif text-4xl mb-2 text-[#1a1a1a] dark:text-white">{project.title}</h3>
                 <p className="font-sans text-sm tracking-widest uppercase text-[#d4af37] mb-8">{project.location}</p>
                 <Link to="/projects" className="w-12 h-12 rounded-full border border-black/20 dark:border-white/20 flex items-center justify-center hover:bg-black dark:hover:bg-white hover:text-white dark:hover:text-black transition-all duration-300">
                   <ArrowRight size={20} />
@@ -226,7 +226,7 @@ export default function Home() {
             viewport={{ once: true }}
             transition={{ duration: 1 }}
           >
-            <h2 className="font-serif text-4xl md:text-6xl mb-8">Let's Build the <span className="text-[#d4af37] italic">Future</span></h2>
+            <h2 className="font-serif text-4xl md:text-6xl mb-8 text-[#1a1a1a] dark:text-white">Let's Build the <span className="text-[#d4af37] italic">Future</span></h2>
             <p className="font-sans text-[#1a1a1a]/70 dark:text-white/70 leading-relaxed mb-8 transition-colors duration-500">
               Whether you're looking for a luxury residence, a commercial hub, or a mindful retreat, our team is ready to bring your vision to life.
             </p>

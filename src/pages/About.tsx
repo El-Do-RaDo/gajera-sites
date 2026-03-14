@@ -7,7 +7,7 @@ const timelineData = [
   {
     year: '2005',
     title: 'The Foundation',
-    description: 'Gajera Estate was established with a vision to transform the urban landscape of India, starting with boutique residential projects in Mumbai.',
+    description: 'Gajera Estate was established with a vision to transform the urban landscape of India, starting with boutique residential projects in Ahmedabad.',
   },
   {
     year: '2010',

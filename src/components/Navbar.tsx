@@ -5,6 +5,8 @@ import { Menu, X, Sun, Moon } from 'lucide-react';
 import { clsx } from 'clsx';
 import { twMerge } from 'tailwind-merge';
 import { useTheme } from './ThemeProvider';
+import logoLight from '../assets/ge-light.png';
+import logoDark from '../assets/ge-dark.png';
 
 export function cn(...inputs: (string | undefined | null | false)[]) {
   return twMerge(clsx(inputs));
@@ -48,10 +50,9 @@ export default function Navbar() {
       >
         <Link to="/" className="relative z-50 group flex items-center gap-3">
           <img 
-            src={theme === 'light' ? 'https://storage.googleapis.com/aistudio-janus-prod-app-data/1118335/2026-03-14T10:37:19.467Z-image.png' : 'https://storage.googleapis.com/aistudio-janus-prod-app-data/1118335/2026-03-14T10:37:18.490Z-image.png'}
+            src={theme === 'light' ? logoLight : logoDark}
             alt="Gajera Estate Logo"
             className="h-12 w-12 md:h-16 md:w-16 object-contain transition-all duration-500"
-            referrerPolicy="no-referrer"
           />
           <div className="flex flex-col">
             <h1 className="font-serif text-xl md:text-2xl tracking-widest uppercase text-[#1a1a1a] dark:text-white transition-colors duration-500">

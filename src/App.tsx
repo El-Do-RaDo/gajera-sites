@@ -33,7 +33,7 @@ function AnimatedRoutes() {
 export default function App() {
   return (
     <ThemeProvider>
-      <Router>
+      <Router basename={import.meta.env.BASE_URL}>
         <SmoothScroll>
           <ScrollToTop />
           <div className="bg-[#f5f2ed] dark:bg-[#0a0a0a] min-h-screen text-[#1a1a1a] dark:text-[#f5f2ed] selection:bg-[#d4af37] selection:text-white dark:selection:text-black transition-colors duration-500">

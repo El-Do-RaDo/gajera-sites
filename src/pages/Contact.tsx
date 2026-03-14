@@ -24,7 +24,7 @@ export default function Contact() {
               <h3 className="font-sans text-xs tracking-[0.2em] uppercase text-[#d4af37] mb-4">Headquarters</h3>
               <p className="font-serif text-2xl text-[#1a1a1a]/80 dark:text-white/80 transition-colors duration-500">
                 101 Gajera Tower, Bandra Kurla Complex<br />
-                Mumbai, Maharashtra 400051<br />
+                Ahmedabad, Gujarat 380058<br />
                 India
               </p>
             </div>
