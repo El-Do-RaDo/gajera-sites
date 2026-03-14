@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@200;300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Cormorant Garamond", ui-serif, Georgia, serif;
+  
+  --color-luxury-black: #0a0a0a;
+  --color-luxury-charcoal: #1a1a1a;
+  --color-luxury-gold: #d4af37;
+  --color-luxury-cream: #f5f2ed;
+}
+
+body {
+  background-color: var(--color-luxury-cream);
+  color: var(--color-luxury-charcoal);
+  overflow-x: hidden;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.dark body {
+  background-color: var(--color-luxury-black);
+  color: var(--color-luxury-cream);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-luxury-cream);
+}
+.dark ::-webkit-scrollbar-track {
+  background: var(--color-luxury-black);
+}
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #333;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-luxury-gold);
+}
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: var(--color-luxury-gold);
+}
+
+.text-outline {
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(26, 26, 26, 0.3);
+}
+.dark .text-outline {
+  -webkit-text-stroke: 1px rgba(245, 242, 237, 0.3);
+}
+
+.text-outline-gold {
+  color: var(--color-luxury-gold);
+  -webkit-text-stroke: 0;
+}
+
+.dark .text-outline-gold {
+  color: transparent;
+  -webkit-text-stroke: 1px var(--color-luxury-gold);
+}
+
+.clip-text {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
